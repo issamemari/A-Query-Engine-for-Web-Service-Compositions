@@ -53,7 +53,7 @@ More formally, the parser validates the given query against the regular language
 
 ### Query Execution
 
-Query execution is performed by the method execute defined in the Query class, and the results are output into the file `result.xml`. Before the execution of the query starts, the query is checked for admissibility. We say that a given query is admissible if, for every variable, the 2 first occurrence of the variable in the call sequence of the body is in an o-position of a function call.
+Query execution is performed by the method execute defined in the Query class, and the results are output into the file `result.xml`. Before the execution of the query starts, the query is checked for admissibility. We say that a given query is admissible if, for every variable, the 2 first occurrences of the variable in the call sequence of the body is in an o-position of a function call.
 
 After having checked the admissibility of the query, the execution starts. The functions are called sequentially in the order in which they appeared in the query and intermediate results are stored in the file result.xml. The intermediate result starts as an empty file and is then populated by the call results of the first function. Then, consecutive functions are called once for each tuple in the current intermediate result. The input arguments for the function call are the corresponding values taken from the current tuple.
 
@@ -67,7 +67,7 @@ the file result.xml in the current working directory.
 
 ### A Working Example
 
-The result of the query mentioned earlier in (2.2) at the time of execution is the following XML file:
+The result of the query mentioned earlier at the time of execution is the following XML file:
 
 `<?xml version="1.0" encoding="UTF-8"?>`  
 `<RESULT>`  
