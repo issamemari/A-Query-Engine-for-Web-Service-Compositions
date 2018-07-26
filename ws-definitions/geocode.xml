@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	Geocoding is the process of converting addresses (like a street address) into geographic coordinates (like latitude and longitude), which you can use to place markers on a map, or position the map.
+-->
+<ws>
+    <headVariables>
+        <variable type="inout" name="?full_address"/>
+        <variable type="output" name="?location"/>
+    </headVariables>
+	<call>
+		<part type="constant" value="https://maps.googleapis.com/maps/api/geocode/xml?address="/>
+		<part type="input" variable="?full_address" separator="+"/>
+		<part type="constant" value="&amp;key=AIzaSyDxofTjwWrqWy8BV3lIpj3GFXBtFjSYxxA"/>
+	</call>
+	<transformation file="geocode.xsl"/>
+</ws>

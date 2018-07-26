@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+    This web service takes as input place_id and outputs details about the place (name, type, phone_number, full_address, rating, website and whether it is open).
+-->
+<ws>
+    <headVariables>
+        <variable type="inout" name="?place_id"/>
+        <variable type="output" name="?name"/>
+        <variable type="output" name="?type"/>
+        <variable type="output" name="?phone_number"/>
+        <variable type="output" name="?full_address"/>
+        <variable type="output" name="?rating"/>
+        <variable type="output" name="?website"/>
+        <variable type="output" name="?open"/>
+    </headVariables>
+	<call>
+		<part type="constant" value="https://maps.googleapis.com/maps/api/place/details/xml?placeid="/>
+		<part type="input" variable="?place_id" separator="+"/>
+		<part type="constant" value="&amp;key=AIzaSyDy2SeONQ6NU0EibAL8vrQi1u-WVtzaL0c"/>
+	</call>
+	<transformation file="placeDetails.xsl"/>
+</ws>

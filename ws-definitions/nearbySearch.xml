@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+	This web service takes as input a location given as a string "longitude, latitude", a type (restaurant, bus_station, etc.) and a radius for the circle around the location to consider and outpus the place_id of the places of that type within distance less than the given radius of the given location.
+-->
+<ws>
+    <headVariables>
+        <variable type="inout" name="?location"/>
+        <variable type="inout" name="?type"/>
+        <variable type="input" name="?radius"/>
+        <variable type="output" name="?place_id"/>
+    </headVariables>
+	<call>
+		<part type="constant" value="https://maps.googleapis.com/maps/api/place/search/xml?location="/>
+		<part type="input" variable="?location" separator="+"/>
+		<part type="constant" value="&amp;type="/>
+		<part type="input" variable="?type" separator="+"/>
+		<part type="constant" value="&amp;radius="/>
+		<part type="input" variable="?radius" separator="+"/>
+		<part type="constant" value="&amp;key=AIzaSyDy2SeONQ6NU0EibAL8vrQi1u-WVtzaL0c"/>
+	</call>
+	<transformation file="nearbySearch.xsl"/>
+</ws>

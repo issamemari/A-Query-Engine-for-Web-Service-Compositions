@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+	Reverse geocoding is the process of converting geographic coordinates into a human-readable address.
+-->
+<ws>
+    <headVariables>
+        <variable type="inout" name="?location"/>
+        <variable type="output" name="?full_address"/>
+    </headVariables>
+	<call>
+		<part type="constant" value="https://maps.googleapis.com/maps/api/geocode/xml?latlng="/>
+		<part type="input" variable="?location" separator="+"/>
+		<part type="constant" value="&amp;key=AIzaSyDxofTjwWrqWy8BV3lIpj3GFXBtFjSYxxA"/>
+	</call>
+	<transformation file="reverseGeocode.xsl"/>
+</ws>
