@@ -38,7 +38,7 @@ To parse and execute given queries, a class Query was developed. The constructor
 
 Suppose we wish to evaluate the following query: get the names, phone numbers and addresses of all open bakeries within 500 meters from 212 Rue de Tolbiac (La Maison des Eléves de Télécom ParisTech). The following is an example of a valid way to write this query:
 
-`result(?name, ?phone number, ?full address) geocodeio("212 Rue de Tolbiac", ?location) # nearbySearchiiio(?location, "bakery", "500", ?place id) # placeDetailsiooooooo(?place id, ?name, ?type, ?phone number, ?full address, ?rating, ?website, "true")`
+`result(?name, ?phone number, ?full address) geocode^io("212 Rue de Tolbiac", ?location) # nearbySearch^iiio(?location, "bakery", "500", ?place id) # placeDetails^iooooooo(?place id, ?name, ?type, ?phone number, ?full address, ?rating, ?website, "true")`
 
 More formally, the parser validates the given query against the regular language defined by the following regular grammar:
 
@@ -53,7 +53,7 @@ More formally, the parser validates the given query against the regular language
 
 ### Query Execution
 
-Query execution is performed by the method execute defined in the Query class, and the results are output into the file `result.xml`. Before the execution of the query starts, the query is checked for admissibility. We say that a given query is admissible if, for every variable, the 2 first occurrences of the variable in the call sequence of the body is in an o-position of a function call.
+Query execution is performed by the method execute defined in the Query class, and the results are output into the file `result.xml`. Before the execution of the query starts, the query is checked for admissibility. We say that a given query is admissible if, for every variable, the first occurrence of the variable in the call sequence of the body is in an o-position of a function call.
 
 After having checked the admissibility of the query, the execution starts. The functions are called sequentially in the order in which they appeared in the query and intermediate results are stored in the file result.xml. The intermediate result starts as an empty file and is then populated by the call results of the first function. Then, consecutive functions are called once for each tuple in the current intermediate result. The input arguments for the function call are the corresponding values taken from the current tuple.
 
