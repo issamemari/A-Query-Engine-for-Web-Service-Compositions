@@ -69,58 +69,58 @@ the file result.xml in the current working directory.
 
 The result of the query mentioned earlier in (2.2) at the time of execution is the following XML file:
 
-`<?xml version="1.0" encoding="UTF-8"?>`
-`<RESULT>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">LAURENT DUCHNE Paris 13eme</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">01 45 65 00 77</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">2 Rue Wurtz, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Grard Mulot</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">01 45 81 39 09</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">93 Rue de la Glacire, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Essentials - Anthony Bosson</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">09 66 95 27 61</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">73 Boulevard Auguste Blanqui, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">L’Imprial</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number"></ITEM>`
-`<ITEM ANGIE-VAR="?full_address">4 Avenue Reille, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Boulangerie Ptisserie M’seddi</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">01 45 89 31 15</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">202 Rue de Tolbiac, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Aux Dlices de Kenza</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">01 45 88 64 72</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">5 Rue de l’Amiral Mouchez, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Exploitation Etablissements Pereira SARL</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">01 45 65 06 64</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">25 Rue de la Butte aux Cailles, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Le Linois</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number"></ITEM>`
-`<ITEM ANGIE-VAR="?full_address">95 Rue de la Glacire, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Royer Loic</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">01 45 80 12 96</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">104 Rue Bobillot, 75013 Paris, France</ITEM>`
-`</RECORD>`
-`<RECORD>`
-`<ITEM ANGIE-VAR="?name">Lorette boulangerie Pains Bio</ITEM>`
-`<ITEM ANGIE-VAR="?phone_number">09 87 19 95 01</ITEM>`
-`<ITEM ANGIE-VAR="?full_address">48 Rue Bobillot, 75013 Paris, France</ITEM>`
-`</RECORD>`
+`<?xml version="1.0" encoding="UTF-8"?>`  
+`<RESULT>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">LAURENT DUCHNE Paris 13eme</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">01 45 65 00 77</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">2 Rue Wurtz, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Grard Mulot</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">01 45 81 39 09</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">93 Rue de la Glacire, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Essentials - Anthony Bosson</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">09 66 95 27 61</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">73 Boulevard Auguste Blanqui, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">L’Imprial</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number"></ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">4 Avenue Reille, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Boulangerie Ptisserie M’seddi</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">01 45 89 31 15</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">202 Rue de Tolbiac, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Aux Dlices de Kenza</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">01 45 88 64 72</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">5 Rue de l’Amiral Mouchez, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Exploitation Etablissements Pereira SARL</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">01 45 65 06 64</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">25 Rue de la Butte aux Cailles, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Le Linois</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number"></ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">95 Rue de la Glacire, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Royer Loic</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">01 45 80 12 96</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">104 Rue Bobillot, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
+`<RECORD>`  
+`<ITEM ANGIE-VAR="?name">Lorette boulangerie Pains Bio</ITEM>`  
+`<ITEM ANGIE-VAR="?phone_number">09 87 19 95 01</ITEM>`  
+`<ITEM ANGIE-VAR="?full_address">48 Rue Bobillot, 75013 Paris, France</ITEM>`  
+`</RECORD>`  
 `</RESULT>`
 
 ### Discussion of Shortcomings
